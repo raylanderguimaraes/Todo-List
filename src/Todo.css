@@ -1,0 +1,46 @@
+
+.container {
+    margin: 20px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.done {
+    text-decoration: line-through;
+}
+
+.listTask {
+    width: 500px;
+    list-style: none;
+}
+
+.item {
+    background-color: white;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card {
+    box-shadow: 0 2px 7px 1px rgba(0,0, 0.2)
+}
+
+
+
+
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
