@@ -1,3 +1,20 @@
+# Aplicativo Web Todo-List criado utilizando React
+
+## Projeto desenvolvido no curso Desenvolvimento Web Full-Stack **ProgramdorBR**
+
+### Tecnologias
+
+- ReactJS
+### Library Icons
+- PhosphorIcon
+
+![2022-12-14 (1)](https://user-images.githubusercontent.com/92590610/207738566-83ac037f-db8d-464b-bb69-47462e61bb41.png)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
