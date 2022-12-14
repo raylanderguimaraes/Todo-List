@@ -8,9 +8,8 @@
 ### Library Icons
 - PhosphorIcon
 
-![2022-12-14 (1)](https://user-images.githubusercontent.com/92590610/207738566-83ac037f-db8d-464b-bb69-47462e61bb41.png)
 
-
+![2022-12-14 (2)](https://user-images.githubusercontent.com/92590610/207740752-c8840f03-72f8-473a-9fa7-31a5f60b2649.png)
 
 
 
