@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-
+import { useDispatch } from 'react-redux';
+import { addItem } from '../actions/listAction';
 
 function TodoForm(props) {
 
     const [text, setText] = useState("");
-
+    const dispatch = useDispatch();
     function handleChange(event) {
 
         let t = event.target.value;
@@ -12,12 +13,13 @@ function TodoForm(props) {
 
     };
 
-    function addItem(event) {
+    function addItemEvent(event) {
 
         event.preventDefault();
         if (text) {
-            props.onAddItem(text);
+            dispatch(addItem(text));
             setText("");
+            props.onHideModal();
         }
 
     };
@@ -25,7 +27,7 @@ function TodoForm(props) {
     return (
         <form>
             <input onChange={handleChange} type="text" value={text}></input>
-            <button onClick={addItem}>Add</button>
+            <button onClick={addItemEvent}>Add</button>
         </form>
     )
 

@@ -1,6 +1,9 @@
 import React from 'react';
 import Card from './Card'
 import { CheckCircle, Trash, Circle } from 'phosphor-react';
+import { useDispatch } from 'react-redux';
+
+import { deleteItem, changeDone } from '../actions/listAction'
 
 function DoneImg(props) {
     if (props.done) {
@@ -14,7 +17,7 @@ function DoneImg(props) {
 
 function ListItem(props) {
 
-
+    const dispatch = useDispatch()
 
     return (
         <li >
@@ -24,9 +27,9 @@ function ListItem(props) {
                 {props.item.text}
 
                 <div className="buttons">
-                    <button onClick={() => { props.onDone(props.item) }}><DoneImg done={props.item.done} /></button>
+                    <button onClick={() => { dispatch(changeDone(props.item.id)) }}><DoneImg done={props.item.done} /></button>
 
-                    <button onClick={() => { props.onItemDeleted(props.item) }}><Trash color="black" size={20} /></button>
+                    <button onClick={() => { dispatch(deleteItem(props.item.id)) }}><Trash color="black" size={20} /></button>
                 </div>
             </Card>
         </li>
